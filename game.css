@@ -1,0 +1,124 @@
+h1 {
+	text-align: center;
+}
+
+body {
+	background-color: skyblue;
+}
+
+#game_container {
+	width: 700px;
+	margin: 100px;
+	padding: 20px;
+	margin-bottom: 0px;
+	background-color: skyblue;
+}
+
+#game_container #draggable_container, #game_container #droppable_container, #game_container #score_container {
+	border: 1px solid #999;
+	width: 700px;
+	margin-bottom: 10px;
+}
+
+#game_container #draggable_container {
+	height: 200px;
+	margin-right: 20px;	
+}
+
+#game_container #droppable_container {
+	height: 300px;
+}
+
+#game_container .dragthis, #game_container .dropped, #game_container .correct, #game_container .incorrect {
+	text-align: center;
+	cursor: move;
+	background-color: #CCF;
+	width: 200px;
+	height: 30px;
+	border: 1px solid blue;
+	padding: 10px;
+	float: left;
+	margin: 10px 0 0 7px;
+	color: #333;
+	-webkit-border-radius: 5px; 
+	border-radius: 5px; 
+	-moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
+}
+
+#game_container .dropped, #game_container .correct, #game_container .incorrect {
+	width: 188px;
+	margin: 5px 0 0 0;
+	font-weight: normal;
+	text-align: center;
+}
+
+#game_container #draggable_container div.ui-sortable-helper {
+	-webkit-box-shadow: 3px 3px 5px 0px #333; 
+	box-shadow: 3px 3px 5px 0px #333; 
+	-moz-box-shadow:    3px 3px 5px 0px #333;
+}
+
+#game_container #droppable_container div.subcontainer {
+	text-align: center;
+	width: 200px;
+	height: 220px;
+	border: 1px solid #990;
+	color: #333;
+	background-color: #FFC;
+	padding: 5px;
+	margin: 5px 0 0 13px;
+	float: left;
+	-webkit-border-radius: 5px; 
+	border-radius: 5px; 
+	-moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
+}
+
+#game_container #button_container {
+	text-align: center;
+	width: 700px;
+	margin-right: 20px;
+}
+
+#game_container .correct {
+	border: 1px solid #393;
+	background-color: tomato;
+}
+
+#game_container .incorrect {
+	border: 1px solid #933;
+	background-color: #FAA;
+}
+
+#game_container #score_container, #game_container #message {
+	background: #E0DBDB;	
+	text-align: center;
+	color: #666;
+	font-size: 1.8em;
+	line-height: 1em;
+}
+
+#game_container #score_container #score_text {
+	padding: 20px;
+}
+
+#game_container #message {
+	padding: 20px;
+	position: absolute;
+	height: 0;
+	width: 0;
+	border: 1px solid #333;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-box-shadow: 3px 3px 5px 0px #333;
+	box-shadow: 3px 3px 5px 0px #333;
+	-moz-box-shadow: 3px 3px 5px 0px #333;
+}
+
+#game_container #message #text {
+	padding-bottom: 10px;
+}
+
+#game_container #score_container .score {
+	font-weight: bold;
+}
